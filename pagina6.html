@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 4: Ciclo de Vida & Manutenção de Software</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0a192f; color: #e2e8f0; display: flex; justify-content: center; padding: 40px 20px; min-height: 100vh; }
+        .container { width: 100%; max-width: 950px; }
+        
+        .header-card { 
+            background-color: #112240; 
+            border: 1px solid rgba(16, 185, 129, 0.3); 
+            border-radius: 12px; 
+            padding: 35px 30px; 
+            text-align: center; 
+            margin-bottom: 35px; 
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.15), 0 10px 20px -5px rgba(2, 12, 27, 0.7); 
+            transition: all 0.3s ease; 
+        }
+        .header-card:hover { 
+            box-shadow: 0 0 35px rgba(16, 185, 129, 0.4), 0 10px 20px -5px rgba(2, 12, 27, 0.7); 
+            border-color: #10b981; 
+        }
+        
+        h1 { color: #10b981; font-size: 2rem; font-weight: bold; margin-bottom: 12px; text-shadow: 0 0 10px rgba(16, 185, 129, 0.3); }
+        .subtitle { color: #94a3b8; font-size: 1rem; line-height: 1.5; margin-bottom: 0; }
+        h2.section-title { color: #ffffff; font-size: 1.3rem; font-weight: bold; text-align: center; margin-top: 30px; margin-bottom: 20px; }
+        
+        .card { background: #112240; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 20px; margin-bottom: 15px; }
+        .card h3 { color: #10b981 !important; font-weight: bold; font-size: 1.25rem; margin-bottom: 8px; }
+        .card p { color: #94a3b8 !important; font-size: 1.15rem; line-height: 1.6; margin: 0; }
+        
+        .code-tag, code { background-color: rgba(16, 185, 129, 0.15); color: #10b981; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+        
+        .nav-buttons { display: flex; justify-content: space-between; align-items: center; margin-top: 40px; margin-bottom: 30px; }
+        .btn-secondary { background-color: #1e293b; color: #ffffff !important; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; display: inline-block; transition: background-color 0.2s; }
+        .btn-secondary:hover { background-color: #334155; }
+        .btn-primary { background-color: #10b981; color: #0f172a !important; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; display: inline-block; transition: background-color 0.2s; }
+        .btn-primary:hover { background-color: #34d399; }
+        
+        .site-footer { text-align: center; margin-top: 20px; padding-bottom: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 25px; }
+        .footer-text { color: #64748b; font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header da Página -->
+        <div class="header-card">
+            <h1>Etapa 4: Ciclo de Vida & Manutenção de Software</h1>
+            <p class="subtitle">Encerramento do ecossistema e estratégias contínuas para sustentação, evolução e integridade do projeto em produção.</p>
+        </div>
+
+        <!-- Seção 1: Sustentação e Evolução -->
+        <h2 class="section-title">Sustentação e Governança</h2>
+        
+        <div class="card">
+            <h3>Manutenção Preventiva e Atualizações</h3>
+            <p>Aplicação regular de <i>patches</i> de segurança nas imagens Docker base (<code>Nginx</code> e <code>PostgreSQL</code>) para mitigação de vulnerabilidades conhecidas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gestão de Mudanças e Migrações</h3>
+            <p>Controle de versionamento de banco de dados e sincronização do código via Git, garantindo implantações auditáveis e sem indisponibilidade.</p>
+        </div>
+
+        <!-- Seção 2: Conclusão da Documentação -->
+        <h2 class="section-title">Visão Geral do Ecossistema</h2>
+
+        <div class="card">
+            <h3>Documentação Técnica Oficial</h3>
+            <p>Centralização do manual de arquitetura no repositório, detalhando portas, comandos de orquestração e fluxos de contêineres.</p>
+        </div>
+
+        <div class="card">
+            <h3>Encerramento do Ciclo de Desenvolvimento</h3>
+            <p>Aplicação prática validada: do levantamento de requisitos à exposição externa segura via Nginx e Ngrok.</p>
+        </div>
+
+        <!-- Navegação -->
+        <div class="nav-buttons">
+            <a href="pagina5.html" class="btn-secondary">← Voltar para Página 5</a>
+            <a href="index.html" class="btn-primary">Finalizar Projeto ✓</a>
+        </div>
+
+        <!-- Rodapé Padronizado -->
+        <footer class="site-footer">
+            <p class="footer-text">Laboratório Prático de Engenharia de Software</p>
+            <p class="footer-text">Desenvolvido no ambiente Docker | Servido via Nginx & Ngrok</p>
+            <p class="footer-text">Engenheiro de Software: Gesley Trinosky Alves Cavalheiro</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

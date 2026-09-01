@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapa 2: Confiabilidade & Qualidade do Software</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0a192f; color: #e2e8f0; display: flex; justify-content: center; padding: 40px 20px; min-height: 100vh; }
+        .container { width: 100%; max-width: 950px; }
+        .header-card { background-color: #112240; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 35px 30px; text-align: center; margin-bottom: 35px; box-shadow: 0 0 20px rgba(16, 185, 129, 0.15), 0 10px 20px -5px rgba(2, 12, 27, 0.7); transition: all 0.3s ease; }
+        .header-card:hover { box-shadow: 0 0 35px rgba(16, 185, 129, 0.4), 0 10px 20px -5px rgba(2, 12, 27, 0.7); border-color: #10b981; }
+        h1 { color: #10b981; font-size: 2rem; font-weight: bold; margin-bottom: 12px; text-shadow: 0 0 10px rgba(16, 185, 129, 0.3); }
+        .subtitle { color: #94a3b8; font-size: 1rem; line-height: 1.5; }
+        .content-section h2 { color: #ffffff; font-size: 1.4rem; margin-bottom: 20px; font-weight: 600; }
+        .quality-card { background-color: #0f223d; border-left: 4px solid #10b981; border-radius: 0 8px 8px 0; padding: 25px 30px; margin-bottom: 40px; }
+        .quality-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+        .quality-item { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+        .quality-item strong { color: #10b981; font-weight: 600; }
+        .badge { background-color: #1e3a5f; color: #60a5fa; padding: 2px 8px; border-radius: 4px; font-family: monospace; font-size: 0.85rem; border: 1px solid rgba(96, 165, 250, 0.2); }
+        .nav-buttons { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 30px; }
+        .btn-secondary { background-color: #1e293b; color: #ffffff !important; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; display: inline-flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+        .btn-secondary:hover { background-color: #334155; }
+        .btn-primary { background-color: #10b981; color: #0f172a !important; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.95rem; display: inline-flex; align-items: center; justify-content: center; transition: background-color 0.2s; }
+        .btn-primary:hover { background-color: #34d399; }
+        .site-footer { text-align: center; margin-top: 20px; padding-bottom: 20px; }
+        .footer-text { color: #64748b; font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-card">
+            <h1>Etapa 2: Confiabilidade & Qualidade do Software</h1>
+            <p class="subtitle">Para garantir que a aplicação se mantenha estável, livre de regressões e pronta para escala em ambientes produtivos.</p>
+        </div>
+        <div class="content-section">
+            <h2>Pilares de Qualidade do Projeto</h2>
+            <div class="quality-card">
+                <ul class="quality-list">
+                    <li class="quality-item"><strong>Estratégia de Testes Automatizados:</strong> Implementação de testes unitários para regras de negócio e testes de integração validando a comunicação entre a API, o <span class="badge">web_nginx</span> e o banco <span class="badge">db_postgres</span>.</li>
+                    <li class="quality-item"><strong>Healthchecks em Containers:</strong> Monitoramento ativo no Docker Compose para assegurar que os serviços só recebam tráfego quando estiverem 100% operacionais.</li>
+                    <li class="quality-item"><strong>Integridade de Dados (ACID):</strong> Aplicação de constraints, chaves estrangeiras e transações seguras no PostgreSQL para evitar corrupção de dados.</li>
+                    <li class="quality-item"><strong>Garantia de Entrega (CI/CD):</strong> Validação automática da suíte de testes em cada alteração antes da liberação do deploy.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <a href="pagina3.html" class="btn-secondary">← Voltar para Página 3</a>
+            <a href="index.html" class="btn-secondary">Página Inicial</a>
+            <a href="pagina5.html" class="btn-primary">Etapa 3: Deploy & Monitoramento (Página 5) →</a>
+        </div>
+        
+        <!-- Rodapé do Projeto -->
+    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px; margin-bottom: 20px;">
+    <footer class="site-footer">
+      <p class="footer-text">Laboratório Prático de Engenharia de Software</p>
+      <p class="footer-text">Desenvolvido no ambiente Docker | Servido via Nginx & Ngrok</p>
+      <p class="footer-text">Engenheiro de Software: Gesley Trinosky Alves Cavalheiro</p>
+    </footer>
+
+  </body>
+</html>

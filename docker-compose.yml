@@ -1,0 +1,26 @@
+
+services:
+  web:
+    image: nginx:alpine
+    container_name: web_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: always
+
+  db:
+    image: postgres:15-alpine
+    container_name: db_postgres
+    environment:
+      POSTGRES_DB: engineered_hub
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secretpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgres_data:

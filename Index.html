@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo de Vida do Software - Engenharia de Software</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Centralização exata no centro da tela */
+        body {
+            background-color: #0a192f;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+        }
+
+        /* Balão Principal com Brilho Neon Sutil */
+        .header-card {
+            background-color: #112240;
+            border: 1px solid #10b98144; /* Borda sutil combinando com o tema */
+            border-radius: 12px;
+            padding: 45px 30px;
+            margin-bottom: 25px;
+            text-align: center;
+            /* Efeito Neon discreto utilizando box-shadow */
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15), 
+                        0 10px 20px -5px rgba(2, 12, 27, 0.7);
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Efeito de brilho levemente elevado ao passar o mouse */
+        .header-card:hover {
+            box-shadow: 0 0 35px rgba(16, 185, 129, 0.25), 
+                        0 10px 20px -5px rgba(2, 12, 27, 0.7);
+        }
+
+        h1 {
+            color: #10b981;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* Botão Principal Centralizado */
+        .hero-action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #10b981;
+            color: #0f172a !important;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: #34d399;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+        }
+
+        /* Rodapé */
+        .site-footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer-text {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header da Página -->
+        <div class="header-card">
+            <h1>Ciclo de Vida do Desenvolvimento de Software</h1>
+            <p class="subtitle">Documentação prática das etapas de engenharia, arquitetura, testes e implantação de sistemas.</p>
+            <div class="hero-action">
+                <a href="projetos.html" class="btn-primary">Ver Projetos →</a>
+                <a href="login.html" class="btn-primary" style="margin-left: 10px;">Área de Login</a>
+        </div>
+    <!-- Rodapé do Projeto -->
+    <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 40px; margin-bottom: 20px;">
+    <footer class="site-footer">
+      <p class="footer-text">Laboratório Prático de Engenharia de Software</p>
+      <p class="footer-text">Desenvolvido no ambiente Docker | Servido via Nginx & Ngrok</p>
+      <p class="footer-text">Engenheiro de Software: Gesley Trinosky Alves Cavalheiro</p>
+    </footer>
+
+  </body>
+</html>

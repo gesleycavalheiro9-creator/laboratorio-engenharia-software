@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Ciclo de Vida do Software</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0a192f;
+            color: #e2e8f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Card do Login padronizado com o balão da home */
+        .login-card {
+            background-color: #112240;
+            border: 1px solid #10b98144;
+            border-radius: 12px;
+            padding: 40px 30px;
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.15), 
+                        0 10px 20px -5px rgba(2, 12, 27, 0.7);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .login-card:hover {
+            box-shadow: 0 0 35px rgba(16, 185, 129, 0.25), 
+                        0 10px 20px -5px rgba(2, 12, 27, 0.7);
+        }
+
+        h2 {
+            color: #10b981;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background-color: #0a192f;
+            border: 1px solid #10b98144;
+            border-radius: 8px;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        input:focus {
+            border-color: #10b981;
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Botão Entrar idêntico ao "Ver Projetos" */
+        .btn-submit {
+            width: 100%;
+            background-color: #10b981;
+            color: #0f172a;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.2s ease;
+            box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+        }
+
+        .btn-submit:hover {
+            background-color: #34d399;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+        }
+
+       .back-link {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.back-link a:hover {
+    color: #10b981;
+    transform: translateX(-3px); /* Move levemente para a esquerda */
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h2>Área de Acesso</h2>
+        <form>
+            <div class="form-group">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+        <div class="back-link">
+            <a href="index.html">← Voltar ao Início</a>
+        </div>
+    </div>
+
+</body>
+</html>
