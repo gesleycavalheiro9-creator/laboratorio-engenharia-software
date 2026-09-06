@@ -16,6 +16,7 @@ Documentação e demonstração prática cobrindo o Ciclo de Vida do Desenvolvim
 3. **Etapa 2 (Confiabilidade & Qualidade):** Estratégia de testes, healthchecks e integridade ACID.
 4. **Etapa 3 (Deploy & Monitoramento):** Roteamento Nginx, túneis Ngrok e auto-recuperação.
 5. **Etapa 4 (Ciclo de Vida & Manutenção):** Governança, atualizações e sustentação pós-deploy.
+6. **Módulo de Autenticação & Interface:** Telas responsivas de Login (`login.html`) e Cadastro (`cadastro.html`) com validação de navegação e simulação de controle de acesso.
 
 ## 🚀 Como Executar o Ambiente Localmente
 
